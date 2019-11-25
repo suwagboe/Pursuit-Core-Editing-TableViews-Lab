@@ -10,11 +10,17 @@ import UIKit
 
 class mainViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var UserEnteredItem: String?
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        mainViewController.datasoure = self
     }
-
 
 }
 
+//extension mainViewController: UITableViewDataSource
+//{
+//
+//}
