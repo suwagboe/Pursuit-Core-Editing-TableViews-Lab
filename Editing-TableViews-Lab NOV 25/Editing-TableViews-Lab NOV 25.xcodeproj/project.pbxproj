@@ -14,7 +14,7 @@
 		3C3D60D5238C7C8700B2CE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D60D4238C7C8700B2CE4D /* Assets.xcassets */; };
 		3C3D60D8238C7C8700B2CE4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D60D6238C7C8700B2CE4D /* LaunchScreen.storyboard */; };
 		3C7746A0238C849300D19AC7 /* groceryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C77469F238C849300D19AC7 /* groceryListCell.swift */; };
-		3C7746A2238C84B500D19AC7 /* addingStuffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7746A1238C84B500D19AC7 /* addingStuffViewController.swift */; };
+		3C7746A2238C84B500D19AC7 /* AddingStuffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7746A1238C84B500D19AC7 /* AddingStuffViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		3C3D60D7238C7C8700B2CE4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C3D60D9238C7C8700B2CE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C77469F238C849300D19AC7 /* groceryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groceryListCell.swift; sourceTree = "<group>"; };
-		3C7746A1238C84B500D19AC7 /* addingStuffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addingStuffViewController.swift; sourceTree = "<group>"; };
+		3C7746A1238C84B500D19AC7 /* AddingStuffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingStuffViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			children = (
 				3C3D60D1238C7C8600B2CE4D /* Main.storyboard */,
 				3C3D60CF238C7C8600B2CE4D /* mainViewController.swift */,
-				3C7746A1238C84B500D19AC7 /* addingStuffViewController.swift */,
+				3C7746A1238C84B500D19AC7 /* AddingStuffViewController.swift */,
 				3C77469F238C849300D19AC7 /* groceryListCell.swift */,
 				3C3D60D4238C7C8700B2CE4D /* Assets.xcassets */,
 				3C3D60CB238C7C8600B2CE4D /* AppDelegate.swift */,
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7746A2238C84B500D19AC7 /* addingStuffViewController.swift in Sources */,
+				3C7746A2238C84B500D19AC7 /* AddingStuffViewController.swift in Sources */,
 				3C3D60D0238C7C8600B2CE4D /* mainViewController.swift in Sources */,
 				3C3D60CC238C7C8600B2CE4D /* AppDelegate.swift in Sources */,
 				3C3D60CE238C7C8600B2CE4D /* SceneDelegate.swift in Sources */,

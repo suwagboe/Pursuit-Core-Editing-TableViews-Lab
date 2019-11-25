@@ -63,15 +63,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Jov-Q3-cBf" id="XIE-Q3-Yuy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="942" y="113"/>
         </scene>
-        <!--View Controller-->
+        <!--Adding Stuff View Controller-->
         <scene sceneID="fNT-R8-F9Y">
             <objects>
-                <viewController id="dz3-rY-O15" sceneMemberID="viewController">
+                <viewController id="dz3-rY-O15" customClass="AddingStuffViewController" customModule="Editing_TableViews_Lab_NOV_25" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zuI-cj-49u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,6 +83,9 @@
                                 <rect key="frame" x="155" y="554" width="104" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Add item"/>
+                                <connections>
+                                    <segue destination="U83-j5-4aP" kind="unwind" unwindAction="addNewItemWithSegue:" id="W9A-m5-OYR"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="add the next item here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="laK-Xy-Te9">
                                 <rect key="frame" x="92" y="387" width="230" height="24"/>
@@ -99,8 +105,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZcN-0Y-edE"/>
                     </view>
+                    <connections>
+                        <outlet property="addItemButton" destination="DNl-vI-Iu9" id="lSA-5P-MS9"/>
+                        <outlet property="addingStufftextField" destination="laK-Xy-Te9" id="avm-Ne-gX2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SF1-Ow-Bxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="U83-j5-4aP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="941" y="-550"/>
         </scene>

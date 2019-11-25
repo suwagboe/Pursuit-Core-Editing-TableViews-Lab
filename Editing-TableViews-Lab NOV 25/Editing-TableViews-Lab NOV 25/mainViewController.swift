@@ -17,6 +17,10 @@ class mainViewController: UIViewController {
     override func viewDidLoad() {
 //        mainViewController.datasoure = self
     }
+    
+    @IBAction func addNewItem(segue: UIStoryboardSegue) {
+        
+    }
 
 }
 
