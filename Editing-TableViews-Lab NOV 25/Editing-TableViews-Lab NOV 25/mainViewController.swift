@@ -70,5 +70,12 @@ extension mainViewController: UITableViewDataSource{
         }
     }
     
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
+        let itemToBeMoved = UserEnteredItem[sourceIndexPath.row]
+            UserEnteredItem.remove(at: sourceIndexPath.row)
+            UserEnteredItem.insert(itemToBeMoved, at: destinationIndexPath.row)
+    }
+    
     
 }
