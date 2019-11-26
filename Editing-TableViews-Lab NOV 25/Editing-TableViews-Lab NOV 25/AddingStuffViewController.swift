@@ -10,6 +10,9 @@ import UIKit
 
 class AddingStuffViewController: UIViewController {
     
+    // the item is added here first where its first created.. 
+    var addedItem: String?
+    
     @IBOutlet weak var addingStufftextField: UITextField!
     @IBOutlet weak var addItemButton: UIButton!
 
@@ -23,7 +26,10 @@ extension AddingStuffViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
+       addedItem = textField.text
+
         textField.resignFirstResponder()
+        
         
         return true
     }

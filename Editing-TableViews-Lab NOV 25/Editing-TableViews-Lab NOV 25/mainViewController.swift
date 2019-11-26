@@ -12,19 +12,48 @@ class mainViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var UserEnteredItem: String?
+    //var UserEnteredItem: String?
+    
+    var UserEnteredItem = [String]() {
+    // array - is this another way to do it
+    didSet{
+        tableView.reloadData()
+    }
+    }
+    
     
     override func viewDidLoad() {
-//        mainViewController.datasoure = self
+        tableView.dataSource = self
     }
     
     @IBAction func addNewItem(segue: UIStoryboardSegue) {
+        print("adding item to list.....")
         
+        // need to hold a reference of addingStuffViewController
+        
+       guard let referenceOfAddingStuffVC = segue.source as? AddingStuffViewController else {
+            fatalError("failed to access addingStuffViewController ")
+        }
+        // after the segue happens then things will be added
+        UserEnteredItem.append(referenceOfAddingStuffVC.addedItem!)
     }
 
 }
+extension mainViewController: UITableViewDataSource{
 
-//extension mainViewController: UITableViewDataSource
-//{
-//
-//}
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return UserEnteredItem.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "groceryCell", for: indexPath)
+        
+        cell.textLabel?.text = UserEnteredItem[indexPath.row]
+        
+        // type casting using as? only for custom cells because they need to know what they should reference
+        return cell
+    }
+    
+    
+    
+}
