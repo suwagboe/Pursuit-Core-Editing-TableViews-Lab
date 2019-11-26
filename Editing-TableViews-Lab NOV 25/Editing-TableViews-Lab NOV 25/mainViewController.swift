@@ -54,6 +54,21 @@ extension mainViewController: UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .insert:
+            print("something is being added to the tableView")
+        case .delete:
+            print("something is getting removed")
+            UserEnteredItem.remove(at: indexPath.row)
+            
+            // why is it [indexPath] and not indexPath.row
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        default:
+            print("nothing is happening")
+        
+        }
+    }
     
     
 }
