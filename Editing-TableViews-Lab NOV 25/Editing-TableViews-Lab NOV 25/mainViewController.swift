@@ -21,9 +21,18 @@ class mainViewController: UIViewController {
     }
     }
     
+     var isEditingTableView = false {
+        didSet{
+            tableView.isEditing = isEditingTableView
+            navigationItem.leftBarButtonItem?.title = isEditingTableView ? "Done" : "Edit"
+
+        }
+        
+    }
     
     override func viewDidLoad() {
         tableView.dataSource = self
+  
     }
     
     @IBAction func addNewItem(segue: UIStoryboardSegue) {
