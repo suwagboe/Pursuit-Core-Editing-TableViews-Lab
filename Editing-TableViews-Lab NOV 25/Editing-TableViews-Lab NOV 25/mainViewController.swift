@@ -51,6 +51,7 @@ class mainViewController: UIViewController {
     
     
     @IBAction func editButton(_ sender: UIBarButtonItem) {
+        isEditing.toggle()
     }
     
     
