@@ -38,6 +38,13 @@ class mainViewController: UIViewController {
         UserEnteredItem.append(referenceOfAddingStuffVC.addedItem!)
     }
 
+    
+    
+    
+    @IBAction func editButton(_ sender: UIBarButtonItem) {
+    }
+    
+    
 }
 extension mainViewController: UITableViewDataSource{
 

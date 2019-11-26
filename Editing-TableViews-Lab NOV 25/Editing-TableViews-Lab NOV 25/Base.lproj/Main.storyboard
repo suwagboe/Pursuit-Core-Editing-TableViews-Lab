@@ -49,7 +49,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Grocery List" id="VVE-6C-pDX">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="QNU-RV-bBh"/>
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="QNU-RV-bBh">
+                            <connections>
+                                <action selector="editButton:" destination="BYZ-38-t0r" id="juK-Mb-K0W"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="uff-yz-SbF">
                             <connections>
                                 <segue destination="dz3-rY-O15" kind="presentation" id="GQi-Zs-wXF"/>
